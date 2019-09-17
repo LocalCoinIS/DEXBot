@@ -374,7 +374,7 @@ def configure_dexbot(config, ctx):
                 else:
                     whiptail.alert('You do not have any bitshares accounts in the wallet')
             elif action == 'ADD_NODE':
-                txt = whiptail.prompt("Your name for the new node: e.g. wss://dexnode.net/ws")
+                txt = whiptail.prompt("Your name for the new node: e.g. wss://fi.localcoin.is")
                 # Insert new node on top of the list
                 config['node'].insert(0, txt)
             elif action == 'NODES':

@@ -41,7 +41,7 @@ The configuration consists of a series of questions about the bots you wish to c
 
    DEXBot needs to have a public node (also called "witness") that gives access to the BitShares blockchain.
 
-   DEXBot uses ``wss://status200.bitshares.apasia.tech/ws`` as its default node
+   DEXBot uses ``wss://de.localcoin.is`` as its default node
    If you run your own witness node then you can edit ``config.yml`` to change the node value.
 
 5. Systemd.

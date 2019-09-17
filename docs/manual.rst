@@ -18,7 +18,7 @@ The config.yml file
 .. code-block:: yaml
 
     # The BitShares endpoint to talk to
-    node: "wss://node.testnet.bitshares.eu"
+    node: "wss://de.localcoin.is"
 
     # List of bots
     bots:
