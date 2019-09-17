@@ -4,7 +4,7 @@ pyinstaller==3.4
 click-datetime==0.2
 cryptography==2.3
 aiohttp==3.0.1
-requests>=2.20.0
+requests==2.21.0
 yarl==1.1.0
 ccxt==1.17.434
 pywaves==0.8.20

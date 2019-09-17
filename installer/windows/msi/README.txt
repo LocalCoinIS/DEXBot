@@ -15,4 +15,4 @@ Website:
 https://dexbot.info
 
 Telegram:
-https://t.me/DEXBOTbts
+https://t.me/DEXBOTLLC

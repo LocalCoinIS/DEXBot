@@ -8,7 +8,7 @@ This is the unit test for filters in process_pair module.
 
 # Unit Tests
 def test_consolidated_pair():
-    symbol = 'STEEM:BTS'  # pair = 'STEEM:BTS' or STEEM/BTS'
+    symbol = 'STEEM:LLC'  # pair = 'STEEM:LLC' or STEEM/LLC'
     pair = split_pair(symbol)
     pair1, pair2 = get_consolidated_pair(pair[1], pair[0])
     print(symbol, '=', pair1, pair2, sep=' ')

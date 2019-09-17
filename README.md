@@ -56,7 +56,7 @@ docker run -d --name dexbot -e UNLOCK=/run/secrets/passphrase -v `pwd`/dexbot-co
 
 ## Getting help
 
-Join the [Telegram Chat for DEXBot](https://t.me/DEXBOTbts).
+Join the [Telegram Chat for DEXBot](https://t.me/DEXBOTLLC).
 
 ## Contributing
 
