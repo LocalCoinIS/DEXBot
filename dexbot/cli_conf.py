@@ -399,7 +399,7 @@ def configure_dexbot(config, ctx):
                 # delete node permanently from config
                 setup_systemd(whiptail, config)
             elif action == 'HELP':
-                whiptail.alert("Please see https://github.com/Codaone/DEXBot/wiki")
+                whiptail.alert("Please see https://github.com/LocalCoinIS/DEXBot/wiki")
 
     whiptail.clear()
     return config

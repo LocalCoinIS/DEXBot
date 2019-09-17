@@ -1,10 +1,10 @@
 # DEXBot
 
-[![Build Status (master)](https://travis-ci.org/Codaone/DEXBot.svg?branch=master)](https://travis-ci.org/Codaone/DEXBot)
+[![Build Status (master)](https://travis-ci.org/LocalCoinIS/DEXBot.svg?branch=master)](https://travis-ci.org/LocalCoinIS/DEXBot)
 [![Documentation
 Status](https://readthedocs.org/projects/dexbot/badge/?version=latest)](https://dexbot.readthedocs.io/en/latest/?badge=latest)
 
-**Download the latest release for Windows, OSX and Linux from [here!](https://github.com/Codaone/DEXBot/releases/latest)**
+**Download the latest release for Windows, OSX and Linux from [here!](https://github.com/LocalCoinIS/DEXBot/releases/latest)**
 
 The Dashboard of the GUI version of DEXBot: ![GUI](https://i.imgur.com/rW8XKQ4.png)
 
@@ -26,7 +26,7 @@ If you properly predict future market conditions, you can manage to make profit.
 
 ## Installing and running the software
 
-See instructions in the [Wiki](https://github.com/Codaone/DEXBot/wiki) for [Linux](https://github.com/Codaone/DEXBot/wiki/Setup-Guide-for-Linux), [Windows](https://github.com/Codaone/DEXBot/wiki/Setup-Guide-for-Windows), [OSX](https://github.com/Codaone/DEXBot/wiki/Setup-Guide-for-Mac-OS-X). [Raspberry Pi](https://github.com/Codaone/DEXBot/wiki/Setup-guide-for-Raspberry-Pi). Other users can try downloading the package or following the Linux guide.
+See instructions in the [Wiki](https://github.com/LocalCoinIS/DEXBot/wiki) for [Linux](https://github.com/LocalCoinIS/DEXBot/wiki/Setup-Guide-for-Linux), [Windows](https://github.com/LocalCoinIS/DEXBot/wiki/Setup-Guide-for-Windows), [OSX](https://github.com/LocalCoinIS/DEXBot/wiki/Setup-Guide-for-Mac-OS-X). [Raspberry Pi](https://github.com/LocalCoinIS/DEXBot/wiki/Setup-guide-for-Raspberry-Pi). Other users can try downloading the package or following the Linux guide.
 
 **Warning**: This is highly experimental code! Use at your OWN risk!
 
@@ -56,14 +56,14 @@ docker run -d --name dexbot -e UNLOCK=/run/secrets/passphrase -v `pwd`/dexbot-co
 
 ## Getting help
 
-Join the [Telegram Chat for DEXBot](https://t.me/DEXBOTLLC).
+Join the [Telegram Chat for DEXBot](https://t.me/LocalCoinIS).
 
 ## Contributing
 
 Install the software, use it and report any problems by creating a ticket.
 
-* [New Contributors Guide](https://github.com/Codaone/DEXBot/wiki/New-Contributors-Guide)
-* [Git Workflow](https://github.com/Codaone/DEXBot/wiki/Git-Workflow)
+* [New Contributors Guide](https://github.com/LocalCoinIS/DEXBot/wiki/New-Contributors-Guide)
+* [Git Workflow](https://github.com/LocalCoinIS/DEXBot/wiki/Git-Workflow)
 
 # IMPORTANT NOTE
 

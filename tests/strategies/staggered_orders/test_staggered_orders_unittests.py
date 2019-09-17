@@ -27,7 +27,7 @@ def test_calculate_min_amounts(worker):
 def test_calculate_asset_thresholds(worker):
     """ Check asset threshold
 
-        Todo: https://github.com/Codaone/DEXBot/issues/554
+        Todo: https://github.com/LocalCoinIS/DEXBot/issues/554
     """
     worker.calculate_asset_thresholds()
     assert worker.base_asset_threshold > 0

@@ -7,12 +7,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 You can have a look into the source code on Github.
-https://github.com/Codaone/DEXBot/
+https://github.com/LocalCoinIS/DEXBot/
 
 If you have any trouble using DEXBot, please visit our telegram chat room or contact us via our website.
 
 Website:
-https://dexbot.info
+https://LocalCoin.IS
 
 Telegram:
-https://t.me/DEXBOTLLC
+https://t.me/LocalCoinIS

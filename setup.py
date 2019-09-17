@@ -36,7 +36,7 @@ setup(
     author_email='support@codaone.com',
     maintainer='Codaone Oy',
     maintainer_email='support@codaone.com',
-    url='http://www.github.com/codaone/dexbot',
+    url='http://www.github.com/LocalCoinIS/DEXBot',
     keywords=['DEX', 'bot', 'trading', 'api', 'blockchain'],
     packages=find_packages(),
     classifiers=[

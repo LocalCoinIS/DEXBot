@@ -44,7 +44,7 @@ def test_maintain_strategy_manual_cp_empty_market(worker):
     worker.cancel_all_orders()
     # Undefine market_center_price
     worker.market_center_price = None
-    # Workaround for https://github.com/Codaone/DEXBot/issues/566
+    # Workaround for https://github.com/LocalCoinIS/DEXBot/issues/566
     worker.last_check = datetime(2000, 1, 1)
     worker.maintain_strategy()
     assert worker.market_center_price == worker.center_price
@@ -57,13 +57,13 @@ def test_maintain_strategy_no_manual_cp_empty_market(worker):
     # Undefine market_center_price
     worker.market_center_price = None
     worker.center_price = None
-    # Workaround for https://github.com/Codaone/DEXBot/issues/566
+    # Workaround for https://github.com/LocalCoinIS/DEXBot/issues/566
     worker.last_check = datetime(2000, 1, 1)
     worker.maintain_strategy()
     assert worker.market_center_price is None
 
 
-@pytest.mark.xfail(reason='https://github.com/Codaone/DEXBot/issues/575')
+@pytest.mark.xfail(reason='https://github.com/LocalCoinIS/DEXBot/issues/575')
 @pytest.mark.parametrize('mode', MODES)
 def test_maintain_strategy_basic(mode, worker, do_initial_allocation):
     """ Check if intial orders placement is correct
@@ -93,7 +93,7 @@ def test_maintain_strategy_basic(mode, worker, do_initial_allocation):
     assert worker.sell_orders[-1]['price'] ** -1 > worker.upper_bound / (1 + worker.increment * 2)
 
 
-@pytest.mark.xfail(reason='https://github.com/Codaone/DEXBot/issues/575')
+@pytest.mark.xfail(reason='https://github.com/LocalCoinIS/DEXBot/issues/575')
 @pytest.mark.parametrize('mode', MODES)
 def test_maintain_strategy_one_sided(mode, base_worker, config_only_base, do_initial_allocation):
     """ Test for one-sided start (buy only)
@@ -118,7 +118,7 @@ def test_maintain_strategy_one_sided(mode, base_worker, config_only_base, do_ini
     assert worker.buy_orders[-1]['price'] < worker.lower_bound * (1 + worker.increment * 2)
 
 
-@pytest.mark.xfail(reason='https://github.com/Codaone/DEXBot/issues/575')
+@pytest.mark.xfail(reason='https://github.com/LocalCoinIS/DEXBot/issues/575')
 def test_maintain_strategy_1sat(base_worker, config_1_sat, do_initial_allocation):
     worker = base_worker(config_1_sat)
     do_initial_allocation(worker, worker.mode)
@@ -329,7 +329,7 @@ def test_increase_order_sizes_valley_smaller_closest_orders(worker, do_initial_a
 
 def test_increase_order_sizes_valley_imbalaced_small_further(worker, do_initial_allocation, increase_until_allocated):
     """ If furthest orders are smaller than closest, they should be increased first.
-        See https://github.com/Codaone/DEXBot/issues/444 for details
+        See https://github.com/LocalCoinIS/DEXBot/issues/444 for details
 
         Buy side, amounts in BASE:
 
@@ -670,7 +670,7 @@ def test_increase_order_sizes_neutral_smaller_closest_orders(worker, do_initial_
 
 def test_increase_order_sizes_neutral_imbalaced_small_further(worker, do_initial_allocation, increase_until_allocated):
     """ If furthest orders are smaller than closest, they should be increased first.
-        See https://github.com/Codaone/DEXBot/issues/444 for details
+        See https://github.com/LocalCoinIS/DEXBot/issues/444 for details
 
         Buy side, amounts in BASE:
 
@@ -901,7 +901,7 @@ def test_allocate_asset_increase_orders(worker, do_initial_allocation, maintain_
     assert balance_in_orders_after['quote'] > balance_in_orders_before['quote']
 
 
-@pytest.mark.xfail(reason='https://github.com/Codaone/DEXBot/issues/588')
+@pytest.mark.xfail(reason='https://github.com/LocalCoinIS/DEXBot/issues/588')
 def test_allocate_asset_dust_order_simple(worker, do_initial_allocation, maintain_until_allocated, base_account):
     """ Make dust order, check if it canceled and closer opposite order placed
     """
@@ -927,7 +927,7 @@ def test_allocate_asset_dust_order_simple(worker, do_initial_allocation, maintai
 
 
 def test_allocate_asset_dust_order_increase(worker, do_initial_allocation, base_account, issue_asset):
-    """ Test for https://github.com/Codaone/DEXBot/issues/587
+    """ Test for https://github.com/LocalCoinIS/DEXBot/issues/587
 
         Check if cancelling dust orders on opposite side will not cause a race for allocate_asset() on opposite side
     """
@@ -957,7 +957,7 @@ def test_allocate_asset_dust_order_increase(worker, do_initial_allocation, base_
     assert num_buy_orders_after - num_buy_orders_before == 1
 
 
-@pytest.mark.xfail(reason='https://github.com/Codaone/DEXBot/issues/588')
+@pytest.mark.xfail(reason='https://github.com/LocalCoinIS/DEXBot/issues/588')
 def test_allocate_asset_filled_orders(worker, do_initial_allocation, base_account):
     """ Fill an order and check if opposite order placed
     """
