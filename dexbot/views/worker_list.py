@@ -57,11 +57,11 @@ class MainView(QMainWindow, Ui_MainWindow):
         # Check if there is already a connection
         if self.config['node']:
             # Test nodes first. This only checks if we're able to connect
-            self.status_bar.showMessage('Connecting to Bitshares...')
+            self.status_bar.showMessage('Connecting to LocalCoin...')
             try:
                 self.main_controller.measure_latency(self.config['node'])
             except NumRetriesReached:
-                self.status_bar.showMessage('ver {} - Coudn\'t connect to Bitshares. '
+                self.status_bar.showMessage('ver {} - Coudn\'t connect to LocalCoin. '
                                             'Please use different node(s) and retry.'.format(__version__))
                 self.main_controller.set_bitshares_instance(None)
                 return False

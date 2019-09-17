@@ -93,7 +93,7 @@
    <item row="1" column="0">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
-      <string>Bitshares Account Details</string>
+      <string>LocalCoin Account Details</string>
      </property>
      <layout class="QFormLayout" name="formLayout_2">
       <property name="rowWrapPolicy">
